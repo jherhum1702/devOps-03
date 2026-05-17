@@ -8,6 +8,3 @@ class User(Base):
     name = Column(String(50), nullable=False)
     email = Column(String(100), unique=True, index=True, nullable=False)
     phone = Column(String(15), nullable=True)
-
-
-

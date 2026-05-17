@@ -16,8 +16,4 @@ class UserUpdate(UserBase):
 class User(UserBase):
     id: int
 
-    model_config = ConfigDict(from_attributes=True)  # ✅ Nueva forma en Pydantic v2
-    # class Config:
-    #     # orm_mode = True
-    #     from_attributes = True  # <- Nueva forma en Pydantic v2 
-
+    model_config = ConfigDict(from_attributes=True)

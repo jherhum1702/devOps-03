@@ -15,7 +15,7 @@ def db():
     session = SessionLocal()
     yield session
     session.close()
-    Base.metadata.drop_all(bind=engine)  #  Eliminar las tablas después de cada prueba
+    Base.metadata.drop_all(bind=engine)  # Eliminar las tablas después de cada prueba
 
 @pytest.fixture(scope="function")
 def client(db):
