@@ -34,7 +34,7 @@ pytest tests/tests_main.py
 
 ```
 export TESTING=False
-echo $TESTINg
+echo $TESTING
 cat .env
 docker compose build
 docker compose up -d bd
